@@ -1,3 +1,4 @@
+# title<《Jack = Student(99)》>
 def write_a_line_of_stars():
     print("\n" + "*" * 50 + "\n")
 
@@ -141,7 +142,7 @@ class Educator():
         print(f"I see your name, {Student.name}")
         print(f"I see your hobby ,it is {Student.hobby}")
         print("So you are not just a score")
-        print(f"maybe we can start from your hobby: {Student.hobby}")
+        print(f"Maybe we can start from your hobby: {Student.hobby}")
 
 
 linus = Educator("linux", 34)
