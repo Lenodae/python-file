@@ -93,24 +93,24 @@ class Student:
         self.score = score
 
 
-student1 = Student(99)
+Jack = Student(99)
 
 
 class Teacher:
-    def judge(self, student):
+    def judge(self, Student):
         print("let me see who you are ")
-        if (student.score > 90):
+        if (Student.score > 90):
             print("good boy!")
-        elif (student.score > 70):
+        elif (Student.score > 70):
             print("Just Okay")
-        elif (student.score > 60):
+        elif (Student.score > 60):
             print("Not bad")
         else:
             print("Need more practice")
 
 
 teacher1 = Teacher()
-teacher1.judge(student1)
+teacher1.judge(Jack)
 
 
 class AlmostHumanStudent(Student):
@@ -128,5 +128,21 @@ class AlmostHumanStudent(Student):
             f"Although I do not want to mention my score, but teacher asked, it is : {self.score}")
 
 
-student1 = AlmostHumanStudent("Jack", 14, "Computer", 59)
-teacher1.judge(student1)
+Jack = AlmostHumanStudent("Jack", 14, "Computer", 59)
+teacher1.judge(Jack)
+
+
+class Educator():
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def help_student(Student):
+        print(f"I see your name, {Student.name}")
+        print(f"I see your hobby ,it is {Student.hobby}")
+        print("So you are not just a score")
+        print(f"maybe we can start from your hobby: {Student.hobby}")
+
+
+linus = Educator("linux", 34)
+linus.help_student(Jack)
