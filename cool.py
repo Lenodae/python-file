@@ -137,7 +137,7 @@ class Educator():
         self.name = name
         self.age = age
 
-    def help_student(Student):
+    def help_student(self, Student):
         print(f"I see your name, {Student.name}")
         print(f"I see your hobby ,it is {Student.hobby}")
         print("So you are not just a score")
